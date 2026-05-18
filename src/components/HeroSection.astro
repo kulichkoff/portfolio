@@ -1,0 +1,116 @@
+---
+import GitHub from "../images/Github.svg";
+import { ArrowRight, Mail } from "@lucide/astro";
+---
+
+<section
+  class="relative min-h-screen bg-linear-to-b from-background via-background to-background overflow-hidden"
+>
+  <div class="absolute inset-0 overflow-hidden">
+    <div
+      class="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse"
+    >
+    </div>
+    <div
+      class="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse delay-1000"
+    >
+    </div>
+  </div>
+
+  <div
+    class="relative z-10 pb-16 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8"
+  >
+    <div
+      class="mb-8 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm"
+    >
+      <div class="w-2 h-2 rounded-full bg-lime-600 animate-pulse"></div>
+      <span class="text-sm font-medium text-foreground"
+        >Available for freelance & full-time</span
+      >
+    </div>
+
+    <p
+      class="text-sm sm:text-base font-semibold text-primary mb-4 uppercase tracking-wider"
+    >
+      Daniel Kulichkov
+    </p>
+
+    <h1
+      class="text-5xl sm:text-6xl lg:text-7xl font-bold text-center text-balance max-w-4xl mb-6"
+    >
+      <span
+        class="bg-clip-text text-transparent bg-linear-to-r from-primary via-primary to-primary/80"
+      >
+        Engineering
+      </span>
+      <br />
+      <span class="text-foreground">Better Products</span>
+    </h1>
+
+    <p
+      class="text-lg sm:text-xl text-muted-foreground text-center max-w-2xl mb-8 text-balance leading-relaxed"
+    >
+      Full-stack developer crafting scalable, safe, performant applications
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+      <a
+        href="#projects"
+        class="group relative px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 flex items-center justify-center gap-2 text-center"
+      >
+        View My Work
+        <ArrowRight
+          class="w-4 h-4 group-hover:translate-x-1 transition-transform"
+        />
+      </a>
+      <!-- <a
+        href="#contact"
+        class="px-8 py-4 border border-primary/50 text-foreground rounded-lg font-semibold hover:bg-primary/5 transition-colors duration-300 flex items-center justify-center"
+      >
+        Get In Touch
+      </a> -->
+    </div>
+
+    <div class="flex items-center gap-6 mb-16">
+      <a
+        href="https://github.com/kulichkoff"
+        class="p-3 rounded-lg bg-card border border-border hover:bg-primary/10 transition-colors duration-300"
+        aria-label="GitHub"
+      >
+        <GitHub class="w-5 h-5 text-foreground" />
+      </a>
+      <a
+        href="mailto:danchick03@gmail.com"
+        class="p-3 rounded-lg bg-card border border-border hover:bg-primary/10 transition-colors duration-300"
+        aria-label="Email"
+      >
+        <Mail class="w-5 h-5 text-foreground" />
+      </a>
+    </div>
+
+    <div class="w-full max-w-2xl">
+      <p
+        class="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 text-center"
+      >
+        Tech Stack
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {
+          [
+            "React",
+            "Svelte",
+            "Node.js",
+            "Nest",
+            "Go",
+            "Rust",
+            "PostgreSQL",
+          ].map((skill) => (
+            <div class="px-4 py-2 rounded-full bg-card border border-border text-sm text-foreground hover:border-primary/50 transition-colors duration-300">
+              {skill}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
