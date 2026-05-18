@@ -122,3 +122,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+.markdown-content h2 {
+  @apply text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4;
+}
+
+.markdown-content *:not(h2) + h2 {
+  @apply mt-8;
+}
+
+.markdown-content p {
+  @apply text-foreground leading-relaxed text-lg;
+}
