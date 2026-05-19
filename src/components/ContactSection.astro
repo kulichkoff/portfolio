@@ -1,0 +1,53 @@
+---
+import { Mail, ArrowRight } from "@lucide/astro";
+---
+
+<section
+  class="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 border-t border-border bg-background"
+>
+  <div class="max-w-4xl mx-auto">
+    <h2
+      id="contact"
+      class="text-sm font-semibold text-primary uppercase tracking-wider mb-2"
+    >
+      Get in Touch
+    </h2>
+
+    <h2
+      class="text-4xl sm:text-5xl font-bold text-foreground mb-6 text-balance"
+    >
+      Let&apos;s work together
+    </h2>
+
+    <p class="text-lg text-muted-foreground leading-relaxed text-balance mb-12">
+      I&apos;m always interested in hearing about new projects and
+      opportunities. Whether you have a question or just want to say hi, feel
+      free to reach out.
+    </p>
+
+    <div class="space-y-4 mb-12">
+      <a
+        href="mailto:danchick03@gmail.com"
+        class="group flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
+      >
+        <Mail class="w-5 h-5 text-primary shrink-0" />
+        <div class="flex-1">
+          <p class="text-sm text-muted-foreground">Email</p>
+          <p class="text-foreground font-medium">danchick03@gmail.com</p>
+        </div>
+        <ArrowRight
+          class="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors"
+        />
+      </a>
+
+      <div
+        class="flex items-center gap-4 p-4 rounded-lg border border-border bg-primary/5"
+      >
+        <div class="w-2 h-2 rounded-full bg-lime-600 animate-pulse"></div>
+        <p class="text-sm text-foreground">
+          I typically respond within <span class="font-semibold">24 hours</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
