@@ -2,7 +2,7 @@
 title: MomentsLab Panel
 description: MomentsLab integration with Adobe Premiere Pro
 technologies: Angular, Adobe CEP
-year: "2025"
+year: 2025
 role: Fron-end developer 
 liveLink: https://www.momentslab.com/integrations/adobe
 heroImage: "../../assets/projects/momentslab_post.jpg"

@@ -8,7 +8,7 @@ const projects = defineCollection({
     z.object({
       title: z.string(),
       description: z.string(),
-      year: z.string().optional(),
+      year: z.number().min(2020).max(2100).optional(),
       role: z.string().optional(),
       liveLink: z.string().optional(),
       sourceCodeLink: z.string().optional(),

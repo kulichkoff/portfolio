@@ -2,7 +2,7 @@
 title: Yuzzit Studio
 description: Web studio for turning footage into edited clips with templates, scenes, and social-ready previews
 technologies: Angular
-year: "2025"
+year: 2025
 role: Front-end developer
 liveLink: https://www.yuzzit.video
 ---
