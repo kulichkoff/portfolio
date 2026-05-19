@@ -72,11 +72,13 @@ const {
             </p>
           </header>
 
-          <div
-            class="w-full aspect-video rounded-lg mb-16 border border-border"
-          >
-            {heroImage && <Image src={heroImage} alt={title} />}
-          </div>
+          {
+            heroImage && (
+              <div class="w-full aspect-video rounded-lg mb-16 border border-border">
+                <Image src={heroImage} alt={title} />
+              </div>
+            )
+          }
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
             <div class="lg:col-span-2 markdown-content">
