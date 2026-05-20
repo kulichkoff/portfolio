@@ -20,11 +20,5 @@
   },
   "devDependencies": {
     "sharp": "^0.34.5"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp"
-    ]
   }
 }
